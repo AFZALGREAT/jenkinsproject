@@ -24,7 +24,7 @@ pipeline {
         stage('Run Fibonacci Script') {
 
             when {
-                expression {params.ENV == 'Production'}
+                expression {params.ENV == 'production'}
             }
             steps {
                 // Run the Python script and provide input (e.g., 7)
