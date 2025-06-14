@@ -4,7 +4,7 @@ def fibonacci_series(n):
     for _ in range(n):
         series.append(a)
         a, b = b, a + b
-    return series
+    print(series)
 
 if __name__ == "__main__":
     try:
