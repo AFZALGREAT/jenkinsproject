@@ -1,6 +1,6 @@
 pipeline {
     agent any
-   parameter {
+   parameters {
        choice (name: 'ENV' , choices:['dev','staging','production'] , description:'type of sites' )
    }
     
