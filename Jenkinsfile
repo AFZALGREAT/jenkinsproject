@@ -21,7 +21,7 @@ pipeline {
             steps {
                 // Run the Python script and provide input (e.g., 7)
                 sh 'python3 -u fibo.py'
-                echo '${env.NAME}'
+                echo "${env.NAME}"
             }
         }
     }
