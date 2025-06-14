@@ -19,7 +19,7 @@ pipeline {
         stage('Run Fibonacci Script') {
             steps {
                 // Run the Python script and provide input (e.g., 7)
-                sh 'python3 fibo.py'
+                sh 'python3 -u fibo.py'
             }
         }
     }
