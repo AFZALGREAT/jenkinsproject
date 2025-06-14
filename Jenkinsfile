@@ -3,7 +3,7 @@ pipeline {
     environment {
         // Reference to the Jenkins credentials ID (you created it as 'github' or similar)
         GIT_TOKEN = credentials('github_token11')
-        name = "Afzal'
+        NAME = "Afzal'
     }
     stages {
         stage('Clone Repo') {
