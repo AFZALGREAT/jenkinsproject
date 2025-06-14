@@ -15,7 +15,7 @@ pipeline {
         stage('Run Fibonacci Script') {
             steps {
                 // Run the Python script and provide input (e.g., 7)
-                sh 'echo 7 | python3 fibonacci.py'
+                sh 'python3 fibonacci.py'
             }
         }
     }
