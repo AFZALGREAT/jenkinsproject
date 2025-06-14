@@ -8,10 +8,11 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 // If your repo is public
-                // git url: 'https://github.com/AFZALGREAT/jenkinsproject.git', branch: 'main'
+                git url: 'https://github.com/AFZALGREAT/jenkinsproject.git', branch: 'main'
+                credentialsId: 'github_token111'
 
                 // OR if private, using GitHub token stored as Jenkins credentials
-                 git url: "https://${GIT_TOKEN}@github.com/AFZALGREAT/jenkinsproject.git", branch: 'main'
+                // git url: "https://${GIT_TOKEN}@github.com/AFZALGREAT/jenkinsproject.git", branch: 'main'
             }
         }
 
