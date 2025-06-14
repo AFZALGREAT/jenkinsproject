@@ -1,5 +1,9 @@
 pipeline {
     agent any
+   parameter {
+       choice (name: 'ENV' , choices:['dev','staging','production'] , description:'type of sites' )
+   }
+    
     environment {
         // Reference to the Jenkins credentials ID (you created it as 'github' or similar)
         GIT_TOKEN = credentials('github_token11')
