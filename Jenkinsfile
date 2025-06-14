@@ -11,7 +11,7 @@ pipeline {
                 // git url: 'https://github.com/AFZALGREAT/jenkinsproject.git', branch: 'main'
 
                 // OR if private, using GitHub token stored as Jenkins credentials
-                 git url: "https://${GIT_TOKEN}@github.com/AFZALGREAT/your-repo.git", branch: 'main'
+                 git url: "https://${GIT_TOKEN}@github.com/AFZALGREAT/jenkinsproject.git", branch: 'main'
             }
         }
 
