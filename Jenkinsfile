@@ -3,6 +3,7 @@ pipeline {
     environment {
         // Reference to the Jenkins credentials ID (you created it as 'github' or similar)
         GIT_TOKEN = credentials('github_token11')
+        name = "Afzal'
     }
     stages {
         stage('Clone Repo') {
@@ -20,6 +21,7 @@ pipeline {
             steps {
                 // Run the Python script and provide input (e.g., 7)
                 sh 'python3 -u fibo.py'
+                echo name
             }
         }
     }
