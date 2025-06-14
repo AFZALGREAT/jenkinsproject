@@ -8,11 +8,6 @@ def fibonacci_series(n):
 
 if __name__ == "__main__":
     try:
-        n = int(input("Enter number of terms: "))
-        if n <= 0:
-            print("Please enter a positive integer.")
-        else:
-            print("Fibonacci series:")
-            print(fibonacci_series(n))
+        n = 8
     except ValueError:
         print("Invalid input! Please enter an integer.")
