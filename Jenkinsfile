@@ -12,6 +12,7 @@ pipeline {
             steps{
                 sh 'echo "Running inside container"'
                 sh 'python --version'
+                sh 'python fibo.py'
             }
         }
     }
